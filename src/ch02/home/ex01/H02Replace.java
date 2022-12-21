@@ -9,7 +9,8 @@ public class H02Replace {
 		int temp = 0;
 		Scanner sc = new Scanner(System.in); 
 		
-		System.out.print("a: "); // presentation logic = IO(Input/Output)를 어떻게 표현할지 나타낸 logic; 프론트엔드가 관리하는 logic
+		// presentation logic = IO (Input/Output)를 어떻게 표현할지 나타낸 logic; 프론트엔드가 관리하는 logic
+		System.out.print("a: ");
 		a = sc.nextInt();
 		System.out.print("b: ");
 		b = sc.nextInt();

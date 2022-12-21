@@ -3,11 +3,11 @@ package ch02.ex01;
 public class C02Output {
 	public static void main(String[] args) {
 		int score = 100;
-		System.out.println(100); // 100 is a constant parameter
-		System.out.println(score); // score is a variable parameter
-		System.out.println(100 + 1); // 100 + 1 is an expression
-		System.out.println(Math.random()); // random() is a method; parameter is method call
-		// random() returns value that is >=0.0, <1.0
+		System.out.println(100); // a constant parameter
+		System.out.println(score); // a variable parameter
+		System.out.println(100 + 1); // an expression parameter
+		System.out.println(Math.random()); // a method call parameter
+		// random() returns a value that is >= 0.0, < 1.0
 		
 		System.out.print(200);
 		System.out.print(300);
