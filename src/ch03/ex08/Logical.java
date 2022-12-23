@@ -2,6 +2,7 @@ package ch03.ex08;
 
 public class Logical {
 	public static void main(String[] args) {
+		// 논리 연산자는 피연산자가 boolean type이다.
 		boolean b = false;
 		
 		b = true && true;

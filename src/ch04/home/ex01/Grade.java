@@ -14,12 +14,38 @@ public class Grade {
 		
 		if (score >= 90) {
 			grade = "A";
-			tail = (score < 94) ? "-" : (score >= 98) ? "+" : "";
 		} else if (score >= 80) {
 			grade = "B";
-			tail = (score < 84) ? "-" : (score >= 88) ? "+" : "";
 		} else grade = "C";
+		
+		if (grade != "C")
+			tail = (score == 100 || score % 10 >= 8) ? "+" : (score % 10 < 4) ? "-" : "";
 		grade += tail;
+		
+		System.out.println(grade);
+		
+		// 모범답안
+//		Scanner sc = new Scanner(System.in);
+//		int score = 0;
+		int tenDigit = 0;
+		int oneDigit = 0;
+//		String grade = "";
+		
+		System.out.print("점수: ");
+		score = sc.nextInt();
+		
+		tenDigit = score / 10;
+		oneDigit = score % 10;
+		
+		if (tenDigit >= 9) grade = "A";
+		else if (tenDigit >= 8) grade = "B";
+		else grade = "C";
+		
+		if (score >= 80) {
+			if (oneDigit >= 8 || tenDigit == 10) grade += "+";
+			else if (0 <= oneDigit && oneDigit < 4) grade += "-";
+		}
+		
 		System.out.println(grade);
 	}
 }

@@ -3,7 +3,7 @@ package ch03.ex10;
 public class C02Final {
 	public static void main(String[] args) {
 		final int MAX = 3;
-//		MAX = 1;
+//		MAX = 1; // final variable cannot be assigned twice
 		
 		double area = 3.14 * 3 * 3;
 		

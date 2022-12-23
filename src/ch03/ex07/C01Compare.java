@@ -2,7 +2,7 @@ package ch03.ex07;
 
 public class C01Compare {
 	public static void main(String[] args) {
-		boolean b = 'A' < 'B';
+		boolean b = 'A' < 'B'; // 비교 연산자의 결과값은 boolean이다.
 		System.out.println(b);
 		b = '0' == 0;
 		System.out.println(b);

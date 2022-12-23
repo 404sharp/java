@@ -17,7 +17,7 @@ public class Overflow {
 		int x = a * b / a;
 		System.out.println(x);
 		
-		x = a / b * a; // 나눗셈을 먼저 하여 필요한 표현 범위를 줄인다.
+		x = a / b * a; // 나눗셈을 먼저 하여 필요한 표현 범위를 줄인다. (overflow를 방지)
 		System.out.println(x);
 	}
 }
