@@ -11,6 +11,8 @@ public class C03String {
 		String sumStr = "" + sum; // 숫자를 문자열로 바꿀 때의 알고리즘
 		System.out.println(sumStr);
 		
+		int i = Integer.parseInt(sumStr); // 문자열을 숫자로 바꾼다.
+		
 		String s = a + b + ""; // +연산자는 왼쪽부터 처리한다.
 		System.out.println(s); // 문자열 3을 출력한다.
 		
