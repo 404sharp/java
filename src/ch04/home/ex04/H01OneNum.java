@@ -18,8 +18,9 @@ public class H01OneNum {
 		
 		char ch = '\0';
 		int number = 0;
-		boolean repeat = true;
+		boolean repeat = false;
 		
+		repeat = true;
 		do {
 			System.out.print("한 자리 자연수를 입력하세요.: ");
 			input = sc.nextLine();
