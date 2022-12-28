@@ -5,22 +5,22 @@ import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		String input = "";
+		// 업무와 관련된 변수들
+		User user = new User();
 		String userName = "";
 		int age = 0;
 		LocalDate joinDate = null;
-		User user = new User();
+		
+		// IO와 관련된 변수들
+		Scanner sc = new Scanner(System.in);
+		String input = "";
 		boolean isGood = false;
 		
-		isGood = false;
 		do {
 			System.out.print("이름: ");
 			userName = sc.nextLine();
-			
-			if (userName.length() != 0) isGood = true;
-			
-			if (!isGood) System.out.println("이름을 입력하세요.");
+			isGood = userName.matches("[a-zA-Z가-힣]+");
+			if (!isGood) System.out.println("ERROR] 이름을 입력하세요.");
 		} while (!isGood);
 		
 		isGood = false;
@@ -28,7 +28,7 @@ public class Main {
 			System.out.print("나이: ");
 			input = sc.nextLine();
 			isGood = input.matches("[0-9]+");
-			if (!isGood) System.out.println("숫자를 입력하세요.");
+			if (!isGood) System.out.println("ERROR] 나이를 입력하세요.");
 			else age = Integer.parseInt(input);
 		} while (!isGood);
 		

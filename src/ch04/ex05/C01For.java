@@ -2,7 +2,7 @@ package ch04.ex05;
 
 public class C01For {
 	public static void main(String[] args) {
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < 10; i++) { // int i는 이 블럭이 scope이다.
 			System.out.print("*");
 		}
 		System.out.println();
