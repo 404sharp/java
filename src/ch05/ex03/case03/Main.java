@@ -2,6 +2,7 @@ package ch05.ex03.case03;
 
 public class Main {
 	public static void main(String[] args) {
+		// new를 한 번 실행했으므로 객체는 1개이다.
 		House house1 = new House();
 		House house2 = null;
 		
