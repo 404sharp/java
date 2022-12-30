@@ -3,6 +3,8 @@ package ch05.home.ex05.case04;
 import java.time.LocalDate;
 
 public class Man {
+	// data가 method보다 중요하므로 data를 먼저 배치한다.
+	// 중요도에 따라서 data를 먼저 배치한 것이다.
 	private String manName;
 	private int age;
 	private LocalDate birthday;

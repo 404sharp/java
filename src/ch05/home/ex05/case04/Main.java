@@ -21,7 +21,9 @@ public class Main {
 }
 /*
 남자 객체만을 class로 디자인하라.
-//암묵적 객체: 식당, 음식
+//객체: 식당, 남자, 음식
+property names = 이름, 나이, 생일
+property values = 최한석, 33, 2025-6-7
 --
 
 식당에서 한 남자가 다가와 앉습니다.

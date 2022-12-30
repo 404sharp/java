@@ -1,6 +1,6 @@
 package ch05.ex04.case02;
 
-public class Player {
+public class Player { // domain 순수한 데이터
 	public String playerName;
 	public static String teamName;
 }
