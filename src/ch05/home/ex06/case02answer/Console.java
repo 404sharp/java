@@ -1,4 +1,4 @@
-package ch05.ex06.case02;
+package ch05.home.ex06.case02answer;
 
 import java.util.Scanner;
 
@@ -12,21 +12,37 @@ public class Console {
 	// 메서드라는 문법을 쓰는 이유는 코드 중복을 피하기 위해서이다.
 	
 	// input guidance message
-	// "private" -- 내부전용 메서드
 	private static void inMsg(String msg) {
 		System.out.print(msg + "\n> ");
 	}
 	
 	// input String
 	public static String inStr(String msg) {
-		Console.inMsg(msg);
-		return sc.nextLine().trim();
+		String input = "";
+		boolean isGood = false;
+		
+		do {
+			Console.inMsg(msg);
+			input = sc.nextLine();
+			isGood = input.matches("[a-zA-Z가-힣]");
+			if(!isGood) Console.err("문자가 아닙니다.");
+		} while(!isGood);
+		
+		return input;
 	}
 	
 	public static int inNum(String msg) {
-		Console.inMsg(msg);
-		int num = sc.nextInt(); sc.nextLine();
-		return num;
+		String input = "";
+		boolean isGood = false;
+		
+		do {
+			Console.inMsg(msg);
+			input = sc.nextLine();
+			isGood = input.matches("^[1-9][0-9]*");
+			if(!isGood) Console.err("자연수가 아닙니다.");
+		} while(!isGood);
+		
+		return Integer.parseInt(input);
 	}
 	
 	// information message
