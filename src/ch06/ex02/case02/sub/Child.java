@@ -1,5 +1,12 @@
 package ch06.ex02.case02.sub;
 
-public class Child {
+import ch06.ex02.case02.Parent;
 
+public class Child extends Parent {
+	public void play() {
+//		this.getRegNum(); // private
+		this.getParentName();  // public
+		this.getMoney(); // protected
+//		this.addMoney(1000); // default
+	}
 }
