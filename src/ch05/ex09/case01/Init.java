@@ -6,7 +6,7 @@ public class Init {
 	private static int s;
 	private int i;
 	
-	static { // static block -- byte code가 로딩된 직후에 실행된다.
+	static { // static block -- byte code가 로딩된 직후에 실행된다. -- runs once
 		Init.s = 1;
 //		this.i = 1; // cannot use instance variables here
 		Console.info("static{}");

@@ -46,12 +46,12 @@ public class Console {
 	}
 	
 	// information message
-	public static void info(String msg) {
-		System.out.println(msg);
+	public static void info(Object msg) {
+		System.out.println(msg.toString());
 	}
 	
 	// error message
-	public static void err(String msg) {
-		System.out.println("ERROR] " + msg);
+	public static void err(Object msg) {
+		System.out.println("ERROR] " + msg.toString());
 	}
 }

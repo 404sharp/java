@@ -2,7 +2,7 @@ package ch06.ex02.case01.sub;
 
 import ch06.ex02.case01.A;
 
-public class B {
+public class B { // 다른 패키지에 있는 클래스가 new를 쓸 수 있기를 바라므로 public
 	public void test() {
 		A a = new A(); // compiler error -- import is required
 		

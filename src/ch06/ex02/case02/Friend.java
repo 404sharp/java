@@ -4,7 +4,7 @@ public class Friend {
 	public void play() {
 		Parent parent = new Parent();
 		
-//		parent.getRegNum();
+//		parent.getRegNum(); // private
 		parent.getParentName();
 		parent.getMoney();
 		parent.addMoney(1000);

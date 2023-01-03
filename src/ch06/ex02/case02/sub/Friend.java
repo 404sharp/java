@@ -7,7 +7,7 @@ public class Friend {
 		Parent parent = new Parent();
 		
 //		parent.getRegNum(); // private
-		parent.getParentName();
+		parent.getParentName(); // public
 //		parent.getMoney(); // protected
 //		parent.addMoney(1000); // default
 	}
