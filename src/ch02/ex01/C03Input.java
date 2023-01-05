@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class C03Input {
 	public static void main(String[] args) {
-		// Ctrl+Shift+O imports class automatically
+		// Ctrl+Shift+O imports classes automatically
 		Scanner sc = new Scanner(System.in);
 		
 //		System.out.print("문자열을 입력하세요.\n> ");

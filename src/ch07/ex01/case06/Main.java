@@ -4,7 +4,7 @@ public class Main {
 	public static void main(String[] args) {
 		Human human = new Student();
 		human.sleep();
-//		human.study();
+//		human.study(); // Human 타입엔 study()가 없다.
 		
 		Student student = (Student)human;
 		student.study();

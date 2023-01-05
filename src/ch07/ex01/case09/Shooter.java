@@ -1,7 +1,7 @@
 package ch07.ex01.case09;
 
 public class Shooter {
-	private Gun gun; // dependency
+	private Gun gun; // dependency; A has a B; B is dependency
 	
 	public void fire() {
 		this.gun.fire();

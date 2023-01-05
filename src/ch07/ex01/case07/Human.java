@@ -6,7 +6,7 @@ public class Human {
 //	public void eat(Kimchi kimchi) {}
 //	public void eat(Apple apple) {}
 	
-	// 변수의 타입은 인터페이스가 좋다. 유지보수에 유리하다.
+	// 변수의 타입은 interface가 좋다. 유지보수에 유리하다.
 	public void eat(Food food) {
 		System.out.println(food + "을(를) 먹다.");
 	}

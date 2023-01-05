@@ -6,7 +6,7 @@ import ch07.ex03.domain.User;
 public class UserServiceImpl implements UserService {
 	private UserDao userDao;
 	
-	public UserServiceImpl(UserDao userDao) {
+	public UserServiceImpl(UserDao userDao) { // DI (Dependency Injection)
 		this.userDao = userDao;
 	}
 	
