@@ -26,6 +26,10 @@ public class Score { // domain
 		return math;
 	}
 
+	public int getSum() {
+		return this.sum;
+	}
+
 	public void setSum(int sum) {
 		this.sum = sum;
 	}

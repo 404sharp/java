@@ -6,6 +6,9 @@ import ch07.ex04.case05.domain.Score;
 public class ScoreServiceImpl implements ScoreService {
 	private ScoreDao scoreDao;
 	
+	// for unit test
+	public ScoreServiceImpl() {}
+	
 	public ScoreServiceImpl(ScoreDao scoreDao) {
 		this.scoreDao = scoreDao;
 	}
@@ -25,11 +28,13 @@ public class ScoreServiceImpl implements ScoreService {
 	
 	// 과제: 학생별 합계, 평균 필드를 채워라.
 	private void calcScore(Score[] scores) { // 내부 전용. 합계, 평균을 채운다.
-		int sum = 0;
-		int avg = 0;
-		
 		for(int i = 0; i < scores.length; i++) {
-			
+			scores[i].setSum(
+					scores[i].getKor() +
+					scores[i].getEng() +
+					scores[i].getMath());
+			scores[i].setAvg(
+					scores[i].getSum() / 3);
 		}
 	}
 }
