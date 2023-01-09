@@ -10,4 +10,9 @@ public class Ball {
 	public int getBallNum() {
 		return this.ballNum;
 	}
+	
+	@Override
+	public String toString() {
+		return this.ballNum + " ";
+	}
 }

@@ -10,6 +10,12 @@ public class Slot {
 			balls[i] = new Ball(i + 1); // 통 속에 공을 집어 넣는다.
 	}
 	
+	/*
+	public Ball chuck() {
+		return balls[(int)(Math.random() * 45)];
+	}
+	*/
+	
 	/* 과제: 하나의 공이 2번 이상 나오는 버그를 해결하라. */
 	public Ball chuck() {
 		int idx = 0;
