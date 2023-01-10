@@ -5,7 +5,7 @@ public class Main {
 		Shooter shooter = new Shooter();
 		Smith smith = new Smith();
 		
-		shooter.fire(() -> System.out.println("탕탕."));
+		shooter.fire(() -> System.out.println("탕탕.")); // fire method를 만든다.
 		shooter.fire(smith.makeGun());
 	}
 }

@@ -12,7 +12,7 @@ public class Main {
 		
 		System.out.printf("%s %d\n", enumName, ordinal);
 		
-		Way[] ways = Way.values(); // entries를 뽑아낸다.
+		Way[] ways = Way.values(); // entries를 뽑아내어 배열로 만든다.
 		for(Way way: ways) System.out.print(way + " ");
 		System.out.println();
 		
