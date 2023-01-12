@@ -8,7 +8,7 @@ public class C03FileLogger {
 	private Logger logger;
 	
 	public C03FileLogger() {
-		// package name을 자동으로 뽑아낸다.
+		// class name(package name 포함)을 자동으로 뽑아낸다. cf. p.490
 		this.logger = Logger.getLogger(this.getClass().getName());
 	}
 	

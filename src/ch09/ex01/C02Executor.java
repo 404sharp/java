@@ -17,7 +17,7 @@ public class C02Executor {
 		};
 		
 		Executor executor = Executors.newCachedThreadPool();
-		executor.execute(r1); // runnable data들을 thread로서 작동을 시킨다.
+		executor.execute(r1); // Runnable data들을 thread로서 작동을 시킨다.
 		executor.execute(r2);
 	}
 }

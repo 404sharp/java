@@ -13,7 +13,7 @@ public class Main {
 				counter.join(1000); // 1000ms동안 지켜보겠다.
 				System.out.println(Thread.currentThread().getName() + ": wait " + tries++);
 			} else {
-				// 3회까지 counter thread가 살아 있다면 분명 자고 있는 것이다.
+				// 3회 기다릴 때까지 counter thread가 살아 있다면 분명 자고 있는 것이다.
 				System.out.println(Thread.currentThread().getName() + ": irritated.");
 				counter.interrupt(); // 이때 InterruptedException 발생
 				counter.join(); // 무한정 기다린다. counter가 죽을 때까지.

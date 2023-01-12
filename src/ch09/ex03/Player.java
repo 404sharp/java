@@ -1,6 +1,6 @@
 package ch09.ex03;
 
-public class Player extends Thread { // Thread는 Runnable 타입이기도 해서 Run()이 이미 있다.
+public class Player extends Thread { // Thread는 Runnable 타입이기도 해서 run()이 이미 있다.
 	private Counter counter;
 	
 	public Player(Counter counter) {
