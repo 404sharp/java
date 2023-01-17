@@ -51,8 +51,7 @@ public class LaborerIo {
 			System.out.println("------------------");
 			// callback
 			laborers.forEach(Console::info);
-		}
-		else Console.info("노동자가 없습니다.");
+		} else Console.info("노동자가 없습니다.");
 	}
 	
 	private void addLaborer() {
