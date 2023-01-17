@@ -46,11 +46,12 @@ public class LaborerIo {
 	private void listLaborers() {
 		List<Laborer> laborers = laborerService.getLaborers();
 		
-		System.out.println("ID 이름    입사일");
-		System.out.println("------------------");
-		
-		// callback
-		if(laborers.size() > 0) laborers.forEach(Console::info);
+		if(laborers.size() > 0) {
+			System.out.println("ID 이름    입사일");
+			System.out.println("------------------");
+			// callback
+			laborers.forEach(Console::info);
+		}
 		else Console.info("노동자가 없습니다.");
 	}
 	
