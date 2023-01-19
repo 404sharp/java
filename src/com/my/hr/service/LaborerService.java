@@ -5,7 +5,7 @@ import java.util.List;
 
 import com.my.hr.domain.Laborer;
 
-public interface LaborerService { // ex. StockService, ScoreService...
+public interface LaborerService { // ex. StockService, ScoreService, ...
 	List<Laborer> getLaborers();
 	void addLaborer(String laborerName, LocalDate hireDate);
 	void fixLaborer(Laborer laborer);
